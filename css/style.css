@@ -1,0 +1,118 @@
+/* ===============================
+   1. 全体ベース
+   =============================== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #c8102e; /* Rocketsレッド */
+}
+
+/* ===============================
+   2. フォーム・入力欄
+   =============================== */
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 5px 10px;
+  margin: 4px 0 10px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* placeholder風の薄い文字色 */
+select:invalid {
+  color: #999;
+}
+
+input:focus, select:focus {
+  border-color: #c8102e;
+  outline: none;
+}
+
+/* ===============================
+   3. ボタン
+   =============================== */
+button {
+  padding: 8px 16px;
+  background-color: #c8102e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #a00b23;
+}
+
+/* ===============================
+   4. ゲームカード / 勝敗
+   =============================== */
+#list {
+  margin-top: 20px;
+}
+
+.game {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.game.win {
+  border-left: 5px solid #4CAF50; /* 勝ち → 緑 */
+}
+
+.game.lose {
+  border-left: 5px solid #F44336; /* 負け → 赤 */
+}
+
+.game button {
+  margin-top: 5px;
+  background-color: #888;
+}
+
+.game button:hover {
+  background-color: #555;
+}
+
+/* 勝率表示 */
+#summary {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+/* ===============================
+   5. チームロゴ
+   =============================== */
+.team-logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.game strong {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* 文字とロゴの間隔 */
+}
