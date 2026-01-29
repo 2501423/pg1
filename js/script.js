@@ -178,6 +178,8 @@ saveBtn.addEventListener("click", () => {
   };
 
   games.push(game);
+  console.log(games);
+  
   localStorage.setItem("rocketsGames", JSON.stringify(games));
 
   // 入力欄クリア
@@ -198,4 +200,5 @@ function deleteGame(index) {
 }
 
 // ===== 起動時 =====
+
 render();
